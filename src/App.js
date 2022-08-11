@@ -33,7 +33,8 @@ export default function App() {
   }, [elements])
 
   return (
-    <div>
+    <div className='border min-h-screen flex items-center flex-col p-5 scroll-smooth'>
+      <h1 className='text-orange-400 pt-4 pb-12 text-5xl font-lobster font-bold'>Todo App</h1>
       <CreateTodo createTodo={createTodo} />
       <ListTodo
         elements={elements}
